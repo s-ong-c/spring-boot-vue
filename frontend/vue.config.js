@@ -1,17 +1,15 @@
 const path = require('path');
 
 const resolve = dir => path.join(__dirname, dir);
-
 module.exports = {
     lintOnSave: false,
-    chainWebpack: (config) => {
+    chainWebpack: (config) =>{
         config.resolve.alias.set('@', resolve('src/styles')).set('_c', resolve('src/components'));
     },
     // Change build paths to make them Maven compatible
     // see https://cli.vuejs.org/config/
     outputDir: 'target/dist',
     assetsDir: 'static',
-
     css: {
         modules: false,
         loaderOptions: {
@@ -36,4 +34,4 @@ module.exports = {
             }
         }
     },
-}
+};

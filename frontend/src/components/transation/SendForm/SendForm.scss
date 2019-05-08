@@ -1,4 +1,4 @@
-@import 'stylutils';
+@import '~@/utils.scss';
 
 .register-form {
   @include media("<=large"){
@@ -24,7 +24,7 @@
 
   }
   .form-contents{
-    padding: 3rem;
+    padding: 2rem;
     background: white;
     @include media("<=large"){
       padding: 1.5rem;
